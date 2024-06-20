@@ -1,0 +1,11 @@
+{
+  "python.defaultInterpreterPath": "/Users/gim-yeongseon/Desktop/code/FAST_API/bin/python3.11", // 각 local 가상환경 python 경로로 설정해야함
+  "editor.formatOnSave": true,
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
+}
