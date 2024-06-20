@@ -18,17 +18,17 @@ en_ko_df = pd.concat([example_0_df, df],).reset_index(drop=True)
 en_ko_df.head()
 dataset = Dataset.from_pandas(en_ko_df)
 
-# # 5. 훈련, 검증, 테스트로 데이터 분할 개수 설정
-# num_train = 1200000
-# num_valid = 90000
-# num_test = 10000
+# 5. 훈련, 검증, 테스트로 데이터 분할 개수 설정
+num_train = 1200000
+num_valid = 90000
+num_test = 10000
 
-# # 6. 데이터셋 분할
-# en_ko_df_train = en_ko_df.iloc[:num_train]
-# en_ko_df_valid = en_ko_df.iloc[num_train:num_train+num_valid]
-# en_ko_df_test = en_ko_df.iloc[-num_test:]
+# 6. 데이터셋 분할
+en_ko_df_train = en_ko_df.iloc[:num_train]
+en_ko_df_valid = en_ko_df.iloc[num_train:num_train+num_valid]
+en_ko_df_test = en_ko_df.iloc[-num_test:]
 
-# # 7. 분할 데이터셋 저장
-# en_ko_df_train.to_csv("train.tsv", sep='\t', index=False)
-# en_ko_df_valid.to_csv("valid.tsv", sep='\t', index=False)
-# en_ko_df_test.to_csv("test.tsv", sep='\t', index=False)
+# 7. 분할 데이터셋 저장
+en_ko_df_train.to_csv("train.tsv", sep='\t', index=False)
+en_ko_df_valid.to_csv("valid.tsv", sep='\t', index=False)
+en_ko_df_test.to_csv("test.tsv", sep='\t', index=False)
