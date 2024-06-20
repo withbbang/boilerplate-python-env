@@ -3,7 +3,6 @@ import numpy as np
 import multiprocessing
 from transformers import (
     AutoTokenizer,
-    AutoModelForSeq2SeqLM,
     DataCollatorForSeq2Seq,
     Seq2SeqTrainingArguments,
     Seq2SeqTrainer,
